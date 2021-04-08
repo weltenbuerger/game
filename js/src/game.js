@@ -3,8 +3,8 @@ class Game {
 
   preload() {
     soundFormats('mp3', 'ogg')
-    this.walkSound = loadSound('../../assets/sounds/gretel_steps.mp3')
-    this.walkLaughSound = loadSound('../../assets/sounds/gretel_walk_laugh.mp3')
+    this.walkSound = loadSound('assets/sounds/gretel_steps.mp3')
+    this.walkLaughSound = loadSound('assets/sounds/gretel_walk_laugh.mp3')
     this.gretel = new Gretel()
     this.gretel.preload()
   }
