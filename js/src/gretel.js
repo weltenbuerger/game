@@ -10,7 +10,7 @@ class Gretel {
     this.exponent = 4 // Determines the curve
     this.x = 0.0 // Current x-coordinate
     this.y = 0.0 // Current y-coordinate
-    this.step = 0.005 // Size of each step along the path
+    this.step = 0.008 // Size of each step along the path
     this.pct = 0.0 // Percentage traveled (0.0 to 1.0)
     // turn circles
     this.angle = 0 // initialize angle variable
@@ -27,7 +27,6 @@ class Gretel {
       'assets/img/gretel4-main-200px.gif',
       'walking gretel'
     )
-    // this.walkSound = loadSound('assets/sounds/gretel_steps.mp3')
     this.daddy_img = createImg('assets/img/daddy.png', 'daddy')
 
     this.gretelFigure = new Figure(this.x, this.y, 20, 20, this.running_gif)
@@ -77,10 +76,10 @@ class Gretel {
 
   isCollision(barrier) {
     if (
-      this.gretelFigure.xRight > barrier.xLeft &&
-      this.gretelFigure.xLeft < barrier.xRight &&
-      this.gretelFigure.yBottom > barrier.yTop &&
-      this.gretelFigure.yTop < barrier.yBottom
+      this.gretelFigure.xRight > barrier.xLeft - 25 &&
+      this.gretelFigure.xLeft < barrier.xRight + 25 &&
+      this.gretelFigure.yBottom > barrier.yTop - 25 &&
+      this.gretelFigure.yTop < barrier.yBottom + 25
     ) {
       return true
     } else {

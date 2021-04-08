@@ -30,7 +30,7 @@ class Game {
       this.gretel.parentFigure.yTop
     )
     if (distance < 20) {
-      alert('Gretel we got you! Time to go to sleep!')
+      window.location.href = 'views/game_over.html'
       this.gretel.parentFigure.move(20, 20)
       this.gretel.gretelFigure.move(100, 200)
     } else if (distance < 60) {

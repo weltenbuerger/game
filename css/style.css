@@ -3,7 +3,8 @@ body {
   height: 100%;
 }
 
-body {
+body,
+div {
   margin: 0;
   display: flex;
 
