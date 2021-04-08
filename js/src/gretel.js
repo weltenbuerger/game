@@ -10,7 +10,7 @@ class Gretel {
     this.exponent = 4 // Determines the curve
     this.x = 0.0 // Current x-coordinate
     this.y = 0.0 // Current y-coordinate
-    this.step = 0.008 // Size of each step along the path
+    this.step = 0.005 // Size of each step along the path
     this.pct = 0.0 // Percentage traveled (0.0 to 1.0)
     // turn circles
     this.angle = 0 // initialize angle variable
